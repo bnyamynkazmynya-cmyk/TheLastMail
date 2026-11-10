@@ -1,0 +1,143 @@
+@import"vars";
+
+* {
+    margin: $mp;
+    padding: $mp;
+    box-sizing: border-box;
+    font-family: $FontFam ;
+}
+
+body {
+    main {
+        section{
+            height: $sectionhv;
+        }
+        p {
+            font-size: larger;
+            font-weight: $FWeight;
+        }
+
+        aside {
+            overflow:auto ;
+            height: $asideh ;
+             
+            div {
+                h2 {
+                    button {
+                        span {
+                            color: $w3choolsCom;
+                        }
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $black;
+
+                    h3 {
+                        color: $gray;
+                    }
+                    p{
+                        margin-top: $PMT;
+                    }
+                }
+
+                #inbox {
+                    background-color: $red;
+                }
+
+                #BRheight {
+                    height: $BRheight;
+                    border-bottom: $bbpx solid;
+                }
+
+                #JDheight {
+                    height: $JDheight;
+                    border-bottom: $bbpx solid;
+                }
+
+                #JDheight2 {
+                    height: $JDheight2;
+                    border-bottom: $bbpx solid;
+                }
+
+                p {
+                    position: relative;
+                    top: $Divpt;
+                }
+
+                h3 {
+                    position: relative;
+                    left: $H3l;
+                    top: $H3t;
+                }
+
+                button {
+                    border: $buttonb solid;
+                }
+
+                button:hover {
+                    background-color: $BGhover;
+                }
+
+                div a div:hover {
+                    background-color: $BGhover;
+                }
+
+                #inbox:hover {
+                    background-color: $BGhover;
+                }
+
+                #NewMassage {
+                    background-color: $NewMassage;
+                }
+
+                #NewMassage:hover {
+                    background-color: $NewMassageHover;
+                }
+
+
+            }
+            
+            }
+
+            #Links {
+                a {
+                    div {
+                        img {
+                            height: $ImgAside;
+                            width: $ImgAside;
+                            border-radius: $Radius;
+                            position: relative;
+                            top: $IMGt;
+                        }
+                    }
+                }
+
+
+            }
+            section{
+                img#pic{
+                    margin: $imgM;
+                    width: $imgHW;
+                    height: $imgHW;
+                    border-radius: $Radius;
+                }
+                #button1{
+                    width: $secbut1w;
+                    height: $secbut1h;
+                }
+                #button2{
+                    width: $secbut2w;
+                    height: $secbut2h;
+                }
+        }
+    }
+}
+
+
+@media (max-width:600px ) {
+section{
+    display: none;
+}
+}

@@ -1,0 +1,100 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body main section {
+  height: 100vh;
+}
+body main p {
+  font-size: larger;
+  font-weight: 400;
+}
+body main aside {
+  overflow: auto;
+  height: 100%;
+}
+body main aside div h2 button span {
+  color: rgb(144, 193, 64);
+}
+body main aside div a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+body main aside div a h3 {
+  color: rgb(96, 96, 96);
+}
+body main aside div a p {
+  margin-top: 20px;
+}
+body main aside div #inbox {
+  background-color: rgb(244, 67, 54);
+}
+body main aside div #BRheight {
+  height: 250px;
+  border-bottom: 0.5px solid;
+}
+body main aside div #JDheight {
+  height: 200px;
+  border-bottom: 0.5px solid;
+}
+body main aside div #JDheight2 {
+  height: 180px;
+  border-bottom: 0.5px solid;
+}
+body main aside div p {
+  position: relative;
+  top: 10px;
+}
+body main aside div h3 {
+  position: relative;
+  left: 15px;
+  top: 5px;
+}
+body main aside div button {
+  border: 0px solid;
+}
+body main aside div button:hover {
+  background-color: rgb(204, 204, 204);
+}
+body main aside div div a div:hover {
+  background-color: rgb(204, 204, 204);
+}
+body main aside div #inbox:hover {
+  background-color: rgb(204, 204, 204);
+}
+body main aside div #NewMassage {
+  background-color: rgb(97, 97, 97);
+}
+body main aside div #NewMassage:hover {
+  background-color: rgb(0, 0, 0);
+}
+body main #Links a div img {
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  position: relative;
+  top: 5px;
+}
+body main section img#pic {
+  margin: 10px;
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+}
+body main section #button1 {
+  width: 120px;
+  height: 50px;
+}
+body main section #button2 {
+  width: 130px;
+  height: 50px;
+}
+
+@media (max-width: 600px) {
+  section {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

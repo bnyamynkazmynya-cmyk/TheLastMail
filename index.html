@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MailBox</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="script/script.js">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="images/Mailx.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1></h1>
+    </header>
+    <main class="container-fluid">
+        <section class="d-flex">
+            <section class="d-flex col-lg-3">
+                <aside class="container-fluid d-none d-xxl-block  m-0">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="p-3 w-100 text-lg-start" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    w3schools<span>.com</span>
+                                </button>
+                            </h2>
+
+                        </div>
+                        <div>
+                            <button id="NewMassage" type="button" class="btn btn-primary w-100 py-4 text-lg-start"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                New Massage <i class="fa-solid fa-pencil"></i>
+                            </button>
+                        </div>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-danger w-100">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">send email</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <form class="p-5 ">
+
+                                        <label for="#">to</label><br>
+                                        <input class="w-100" type="text">
+
+                                        <label class="mt-3" for="#">form</label><br>
+                                        <input class="w-100" type="text">
+                                        <div class="mt-3">
+                                            <input class="w-100 " type="text" placeholder="What's on your mind?">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item ">
+                                <h2 class="accordion-header">
+                                    <button id="inbox" class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <i class="fa-solid fa-inbox"></i> Inbox(3)
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body container-fluid" id="Links">
+                                        <a href="#" onclick="getperson(0)">
+                                            <div id="BRheight" class="container-fluid">
+                                                <div class="d-flex"><img src="images/avatar3.png" alt="Pictures"
+                                                        title="Pictures">
+                                                    <h3>Borge Refsnes</h3>
+                                                </div>
+
+                                                <p>Subject: Remember Me</p>
+                                                <p>Hello, I just wanted to let you know <br> that I'll be home at...</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" onclick="getperson(1)">
+                                            <div id="JDheight" class="container">
+                                                <div class="d-flex"><img src="images/avatar5.png" alt="Pictures"
+                                                        title="Pictures">
+                                                    <h3>Jane Doe</h3>
+                                                </div>
+
+                                                <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit...</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" onclick="getperson(2)">
+                                            <div id="JDheight2" class="container">
+                                                <div class="d-flex"><img src="images/avatar2.png" alt="Pictures"
+                                                        title="Pictures">
+                                                    <h3>John Doe</h3>
+                                                </div>
+
+                                                <p>Welcome!</p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <p class="accordion-header">
+                                    <button class="p-3 w-100 text-lg-start" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <i class="fa-regular fa-paper-plane"></i>Send
+                                    </button>
+                                </p>
+
+                            </div>
+                            <div class="accordion-item">
+                                <p class="accordion-header">
+                                    <button class="p-3 w-100 text-lg-start" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <i class="fa-solid fa-hourglass-end"></i>Drafts
+                                    </button>
+                                </p>
+
+                            </div>
+                            <div class="accordion-item">
+                                <p class="accordion-header">
+                                    <button class="p-3 w-100 text-lg-start" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <i class="fa-solid fa-trash-can"></i>Trash
+                                    </button>
+                                </p>
+
+                            </div>
+                </aside>
+            </section>
+
+            <section class="col-lg-9">
+                <img id="pic" src="" alt="">
+                <h3 id="sub"></h3>
+                <h3 id="n&d"></h3>
+                <button id="button1"></button>
+                <button id="button2"></button>
+                <hr>
+                <p id="para"></p>
+            </section>
+        </section>
+
+    </main>
+
+
+    <script src="script/script.js">
+    </script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>
